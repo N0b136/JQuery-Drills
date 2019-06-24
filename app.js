@@ -1,6 +1,15 @@
 $(document).ready(function(){
-    $('body').prepend("<input type='submit' id='btnSubmit' value='Submit'>");
-    $('#btnSubmit').click(function() {
-        alert('The button was clicked.')
+    $('form').append("<input type='submit' id='btnSubmit' value='Submit' disabled='true'>");
+
+    $('input[type="text"]').change(function() {
+       $('#btnSubmit').removeAttr('disabled');
     });
+
+    $('body').append('<div id="d"></div>');
+
+    $('#btnSubmit').click(function() {
+        let $inputText = $(':text').text();
+       
+    });
+    
 });
