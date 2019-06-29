@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('form').append("<input type='button' id='btnSubmit' value='Submit' disabled='true'>");
+    $('form').append("<input type='submit' id='btnSubmit' value='Submit' disabled='true'>");
 
     $('input[type="text"]').change(function() {
        $('#btnSubmit').removeAttr('disabled');
@@ -10,6 +10,7 @@ $(document).ready(function(){
     $('<ul></ul>').insertAfter('form');
 
     $('#btnSubmit').click(function() {
+        event.preventDefault();
         let $inputText = $(':text').val();
         /* $('#d1').append('<h2>'+ $inputText + '</h2>');
         $('h2').mouseover(function (){
