@@ -15,7 +15,7 @@
 * Use jQuery to create an unordered list and append it to the body $
 * When the user submits the form, append the text as list item to the unordered list $
 * When the user clicks on the li element, assign it a random color. $
-* When the user double clicks on the list, remove the item that was clicked on. (hint)
+* When the user double clicks on the list, remove the item that was clicked on. (hint)$
 
 # Hints
 * jQuery on method: http://api.jquery.com/on/

@@ -22,6 +22,9 @@ $(document).ready(function(){
             let rndCl3 = Math.floor(Math.random() * 255);
             $(this).css('color','rgb('+ rndCl1+ ','+rndCl2+','+rndCl3+')');
         });
+        $('li').dblclick(function() {
+            $(this).remove();
+        })
     });
 
     
